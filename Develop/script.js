@@ -52,6 +52,39 @@ function generatePassword()
       hasUpperCase: hasUpperCase,
       hasNumbers: hasNumbers, 
 };
+
+var possiblePasswordChars = [];
+var password = [];
+
+if (passwordOptions.hasSpecialChars) {
+  possiblePasswordChars=possiblePasswordChars.concat(specialCharacters);
+  var randomChar = getRandomCharacter(specialCharacters);
+  password.push(randomChar);
+}
+if (passwordOptions.hasNumbers){
+  possiblePasswordChars=possiblePasswordChars.concat(hasNumbers);
+  var randomChar=getRandomCharacter(hasNumbers);
+  password.push(randomChar);
+}
+
+if (passwordOptions.hasLowerCase) {
+  possiblePasswordChars=possiblePasswordChars.concat(hasLowerCase);
+  var randomChar=getRandomCharacter(hasLowerCase);
+  password.push(randomChar);
+}
+
+if (passwordOptions.hasUpperCase) {
+  possiblePasswordChars=possiblePasswordChars.concat(hasUpperCase);
+  var randomChar=getRandomCharacter(hasUpperCase);
+  password.push(randomChar);
+}
+
+for (var i=0; i < passwordOptions.length-password.length; i++) {
+  var randomChar = getRandomCharacter(possiblePasswordChars);
+  password.push(randomChar);
+}
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
