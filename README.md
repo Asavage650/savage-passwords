@@ -14,7 +14,7 @@
 ## ![Image of site](/2023-04-10%20(6).png)
 ## ![Image of generator working](/2023-04-10%20(5).png)
 ## ![Image of password](/2023-04-10%20(4).png)
-## Link:
+## Link: https://github.com/Asavage650/savage-passwords.git
 ## Credits
 ## This code derived from a starter code within module 3 all of the HTML and most of the CSS were already done, I only added the JavaScript and some extra CSS styling. I also had help from Erik Hirsch with the JavaScript and functionality of the site.
 ## License
