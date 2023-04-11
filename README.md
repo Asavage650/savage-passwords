@@ -11,4 +11,11 @@
 ## Use on a typical web browser such as google chrome or safari.
 ## Usage 
 ## The password generator can be used to creat a random password which can be used for most websites or any personal uses.
-
+## ![Image of site](/2023-04-10%20(6).png)
+## ![Image of generator working](/2023-04-10%20(5).png)
+## ![Image of password](/2023-04-10%20(4).png)
+## Link:
+## Credits
+## This code derived from a starter code within module 3 all of the HTML and most of the CSS were already done, I only added the JavaScript and some extra CSS styling. I also had help from Erik Hirsch with the JavaScript and functionality of the site.
+## License
+## Please refer to license on Github.
