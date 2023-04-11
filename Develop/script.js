@@ -121,25 +121,21 @@ function generatePassword() {
 
   if (passwordOptions.hasSpecialChars) {
     possiblePasswordChars = possiblePasswordChars.concat(specialCharacters);
-    // const randomChar = getRandomCharacter(specialCharacters);
-    // password.push(randomChar);
+    
   }
   if (passwordOptions.hasNumbers) {
     possiblePasswordChars = possiblePasswordChars.concat(numbers);
-    // const randomChar=getRandomCharacter(hasNumbers);
-    // password.push(randomChar);
+    
   }
 
   if (passwordOptions.hasLowerCase) {
     possiblePasswordChars = possiblePasswordChars.concat(lowerCased);
-    // const randomChar=getRandomCharacter(hasLowerCase);
-    // password.push(randomChar);
+    
   }
 
   if (passwordOptions.hasUpperCase) {
     possiblePasswordChars = possiblePasswordChars.concat(upperCased);
-    // const randomChar=getRandomCharacter(hasUpperCase);
-    // password.push(randomChar);
+
   }
 
   for (let i = 0; i < passwordOptions.passwordLength; i++) {
